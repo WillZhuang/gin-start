@@ -1,24 +1,40 @@
 package main
 
 import (
-	"github.com/fvbock/endless"
+	"fmt"
 	"github.com/gin-gonic/gin"
-	"log"
+	"os"
+	"os/signal"
+	"syscall"
 )
 
 func main() {
-	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context) {
+	engine := gin.Default()
+	engine.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"message": "pong",
 		})
 	})
+	TrapSignal(func() {
+		fmt.Println("before exit.")
+	})
 
-	err := endless.ListenAndServe("127.0.0.1:4242", r)
-	if err != nil {
-		log.Println(err)
-	}
-	log.Println("Server on 4242 stopped")
+	engine.Run()
+}
 
-	r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
+// TrapSignal catches the SIGTERM/SIGINT/SIGKILL and executes cb function.
+// After that it exits with code 0.
+func TrapSignal(cb func()) {
+	c := make(chan os.Signal, 1)
+	signal.Notify(c, syscall.SIGINT, syscall.SIGTERM, syscall.SIGKILL)
+	go func() {
+		for sig := range c {
+			fmt.Println("captured %v, exiting...", sig)
+			if cb != nil {
+				cb()
+			}
+			fmt.Println("exit")
+			os.Exit(0)
+		}
+	}()
 }

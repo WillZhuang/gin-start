@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce1d22f7-fa0d-42e2-bc36-23a31fbc57a9" name="Default Changelist" comment="" />
+    <list default="true" id="ce1d22f7-fa0d-42e2-bc36-23a31fbc57a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/05.cron/cron.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04.reload/reload.go" beforeDir="false" afterPath="$PROJECT_DIR$/04.reload/reload.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,10 +21,14 @@
     </option>
   </component>
   <component name="GOROOT" path="$USER_HOME$/Downloads/go1.13.7.linux-amd64/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1Ze55mTj1kQQu1htXEg6zobelhX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,8 +39,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/04.reload" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/04.reload" />
+    </key>
   </component>
   <component name="RunManager" selected="Go Build.go build reload.go">
     <configuration name="go build gin-start/01.helloworld" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -93,32 +109,41 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-    <proxy>https://goproxy.io</proxy>
+    <proxy>goproxy.cn</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1801" height="264" key="GridCell.Tab.0.bottom" timestamp="1585558361629">
-      <screen x="67" y="27" width="1847" height="938" />
+    <state x="581" y="342" width="574" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585645979398">
+      <screen x="67" y="27" width="1613" height="1023" />
     </state>
-    <state width="1801" height="264" key="GridCell.Tab.0.bottom/67.27.1847.938@67.27.1847.938" timestamp="1585558361629" />
-    <state width="1807" height="306" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585555913308" />
-    <state width="1801" height="264" key="GridCell.Tab.0.center" timestamp="1585558361629">
-      <screen x="67" y="27" width="1847" height="938" />
-    </state>
-    <state width="1801" height="264" key="GridCell.Tab.0.center/67.27.1847.938@67.27.1847.938" timestamp="1585558361629" />
-    <state width="1807" height="306" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585555913307" />
-    <state width="1801" height="264" key="GridCell.Tab.0.left" timestamp="1585558361628">
-      <screen x="67" y="27" width="1847" height="938" />
-    </state>
-    <state width="1801" height="264" key="GridCell.Tab.0.left/67.27.1847.938@67.27.1847.938" timestamp="1585558361628" />
-    <state width="1807" height="306" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585555913306" />
-    <state width="1801" height="264" key="GridCell.Tab.0.right" timestamp="1585558361629">
-      <screen x="67" y="27" width="1847" height="938" />
-    </state>
-    <state width="1801" height="264" key="GridCell.Tab.0.right/67.27.1847.938@67.27.1847.938" timestamp="1585558361629" />
-    <state width="1807" height="306" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585555913308" />
-    <state x="482" y="187" key="SettingsEditor" timestamp="1585555985876">
+    <state x="581" y="342" width="574" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1613.1023@67.27.1613.1023" timestamp="1585645979398" />
+    <state x="728" y="408" width="520" height="288" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585560581068">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
+    <state x="728" y="408" width="520" height="288" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/67.27.1853.1053@67.27.1853.1053" timestamp="1585560581068" />
+    <state width="1801" height="311" key="GridCell.Tab.0.bottom" timestamp="1585559487982">
+      <screen x="67" y="27" width="1847" height="938" />
+    </state>
+    <state width="1801" height="311" key="GridCell.Tab.0.bottom/67.27.1847.938@67.27.1847.938" timestamp="1585559487982" />
+    <state width="1807" height="306" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585555913308" />
+    <state width="1801" height="311" key="GridCell.Tab.0.center" timestamp="1585559487981">
+      <screen x="67" y="27" width="1847" height="938" />
+    </state>
+    <state width="1801" height="311" key="GridCell.Tab.0.center/67.27.1847.938@67.27.1847.938" timestamp="1585559487981" />
+    <state width="1807" height="306" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585555913307" />
+    <state width="1801" height="311" key="GridCell.Tab.0.left" timestamp="1585559487980">
+      <screen x="67" y="27" width="1847" height="938" />
+    </state>
+    <state width="1801" height="311" key="GridCell.Tab.0.left/67.27.1847.938@67.27.1847.938" timestamp="1585559487980" />
+    <state width="1807" height="306" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585555913306" />
+    <state width="1801" height="311" key="GridCell.Tab.0.right" timestamp="1585559487981">
+      <screen x="67" y="27" width="1847" height="938" />
+    </state>
+    <state width="1801" height="311" key="GridCell.Tab.0.right/67.27.1847.938@67.27.1847.938" timestamp="1585559487981" />
+    <state width="1807" height="306" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585555913308" />
+    <state x="428" y="182" key="SettingsEditor" timestamp="1585559796117">
+      <screen x="67" y="27" width="1613" height="1023" />
+    </state>
+    <state x="428" y="182" key="SettingsEditor/67.27.1613.1023@67.27.1613.1023" timestamp="1585559796117" />
     <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1585555985876" />
   </component>
 </project>
